@@ -140,7 +140,7 @@
 
     .line 622
     :cond_4
-    invoke-static {}, Landroid/telephony/SubscriptionManager;->getDefaultDataPhoneId()I
+    invoke-static {}, Landroid/telephony/SubscriptionManager;->getDefaultDataSubscriptionId()I
 
     move-result v3
 
