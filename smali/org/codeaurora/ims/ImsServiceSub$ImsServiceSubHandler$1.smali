@@ -32,7 +32,7 @@
     .locals 0
     .param p1, "this$1"    # Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler;
 
-    .line 1498
+    .line 1488
     iput-object p1, p0, Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler$1;->this$1:Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler;
 
     iput p2, p0, Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler$1;->val$registrationState:I
@@ -51,7 +51,7 @@
 .method public run()V
     .locals 2
 
-    .line 1501
+    .line 1491
     iget v0, p0, Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler$1;->val$registrationState:I
 
     const/4 v1, 0x1
@@ -68,7 +68,7 @@
 
     goto :goto_0
 
-    .line 1509
+    .line 1499
     :cond_0
     iget-object v0, p0, Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler$1;->this$1:Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler;
 
@@ -84,7 +84,7 @@
 
     goto :goto_0
 
-    .line 1506
+    .line 1496
     :cond_1
     iget-object v0, p0, Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler$1;->this$1:Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler;
 
@@ -98,10 +98,10 @@
 
     invoke-virtual {v0, v1}, Lorg/codeaurora/ims/ImsRegistrationImpl;->registrationDisconnected(Landroid/telephony/ims/ImsReasonInfo;)V
 
-    .line 1507
+    .line 1497
     goto :goto_0
 
-    .line 1503
+    .line 1493
     :cond_2
     iget-object v0, p0, Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler$1;->this$1:Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler;
 
@@ -115,19 +115,10 @@
 
     invoke-virtual {v0, v1}, Lorg/codeaurora/ims/ImsRegistrationImpl;->registeredWithRadioTech(I)V
 
-    .line 1504
+    .line 1494
     nop
 
-    .line 1512
+    .line 1502
     :goto_0
-    iget-object v0, p0, Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler$1;->this$1:Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler;
-
-    iget-object v0, v0, Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler;->this$0:Lorg/codeaurora/ims/ImsServiceSub;
-
-    iget v1, p0, Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler$1;->val$registrationState:I
-
-    invoke-static {v0, v1}, Lorg/codeaurora/ims/ImsServiceSub;->access$1300(Lorg/codeaurora/ims/ImsServiceSub;I)V
-
-    .line 1513
     return-void
 .end method
